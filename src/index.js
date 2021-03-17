@@ -24,29 +24,25 @@ navBar.appendChild(navButton('Contact'));
 navBar.appendChild(navButton('Menu'));
 
 content.appendChild(navBar);
-
-const switchPage = () => {
- document.querySelectorAll('button').forEach((e) => {
-  e.target.textContent;
-
-
-
- })
-};
+content.appendChild(loadInitial(title, slogan));
 
 document.querySelectorAll('button').forEach((b) => {
   b.addEventListener('click', (e) => {
-     switch (e.target.textContent) {
-    case 'Home':
-      content.appendChild(loadInitial(title, slogan));
-      break;
-    case 'Contact':
-      content.appendChild(contacts());
-      break;
-    case 'Menu':
-      content.appendChild(menu());
-      break;
-    default:
+
+    content.textContent = ''
+    content.appendChild(navBar);
+
+    switch (e.target.textContent) {
+      case 'Home':
+        content.appendChild(loadInitial(title, slogan));
+        break;
+      case 'Contact':
+        content.appendChild(contacts());
+        break;
+      case 'Menu':
+        content.appendChild(menu());
+        break;
+      default:
   }
   })
 });

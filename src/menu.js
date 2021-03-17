@@ -6,13 +6,13 @@ const menu = () => {
   header.classList.add('header');
   header.textContent = 'Menu';
 
-  const span = document.createElement('span')
+  const span = document.createElement('span');
   span.textContent = 'Rice';
 
   newDiv.appendChild(header);
   newDiv.appendChild(span);
 
   return newDiv;
-}
+};
 
 export default menu;

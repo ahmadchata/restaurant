@@ -1,4 +1,4 @@
-const initialLoad = (title, slogan='') => {
+const initialLoad = (title, slogan = '') => {
   const main = document.createElement('main');
   main.classList.add('main');
 
@@ -14,6 +14,6 @@ const initialLoad = (title, slogan='') => {
   main.appendChild(description);
 
   return main;
-}
+};
 
 export default initialLoad;

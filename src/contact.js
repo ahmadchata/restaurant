@@ -6,13 +6,13 @@ const contacts = () => {
   header.classList.add('header');
   header.textContent = 'Contact us';
 
-  const span = document.createElement('span')
+  const span = document.createElement('span');
   span.textContent = 'ahmadchata@gmail.com';
 
   newDiv.appendChild(header);
   newDiv.appendChild(span);
 
   return newDiv;
-}
+};
 
 export default contacts;

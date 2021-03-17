@@ -1,11 +1,10 @@
 import '../stylesheets/style.css';
+import loadInitial from './initialLoad';
+
+
+const title = "Rest or Rant";
+const slogan = "You either eat and rest or don't eat and continue ranting";
 
 const content = document.querySelector('#content');
-const create = () => {
-  const p = document.createElement('p');
-  p.textContent = 'Restaurant';
-  p.classList.add('test');
-  return p;
-};
 
-content.appendChild(create());
+content.appendChild(loadInitial(title, slogan));
